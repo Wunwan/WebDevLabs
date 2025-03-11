@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Wunwan Boonsitanara">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Wunwan's Professional Website">
     <title>Wunwan</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <style>
-        body {font-family: Arial}
-    </style>
     <header>
-        <h1>Wunwan Boonsitanara</h1>
+        <h1 id="webname">Wunwan Boonsitanara</h1>
         <nav>
             <a href="../index.html">Home</a>
             <a href="cv.html">CV</a>
@@ -21,23 +25,23 @@
     </header>
     <div class="main">
         <h2>Contact Me</h2>
-        <form action="/action_page.php">
+        <form>
             <label for="name">Your name(required)</label>
-            <input type="text" name ="name"id="name" required>
+            <input type="text" id="name" required>
             <label for="email">Your email</label>
-            <input type="email">
-            <label for="text">Your comment</label>
+            <input type="email" id="email">
+            <label for="comment">Your comment</label>
             <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
             <input type="submit" value="Submit">
         </form>
-        <h3>Contact Method Description</h3>
-        <p>Email: pboonsit@andrew.cmu.edu</p>
-        <p>Phone: 8723023284</p>
-        <p>Linkin: Pawida (Wunwan) Boonsitanara </p>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>pboonsit@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>8723023284</td></tr>
+            <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/pawida-boonsitanara-107b46263/">Pawida (Wunwan) Boonsitanara</a></td></tr>
+        </table>
     </div>
-    <footer>
-        <p>© 2025 designed 🎨 and coded 👩🏻‍💻 by Wunwan Boonsitanara</p>
-    </footer>
+    <footer>© 2025 designed 🎨 and coded 👩🏻‍💻 by Wunwan Boonsitanara</footer>
     
 </body>
 </html>
