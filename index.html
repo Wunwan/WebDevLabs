@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Wunwan Boonsitanara">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Wunwan's Professional Website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wunwan Boonsitanara" />
+    <meta
+      name="keywords"
+      content="Carnegie Mellon University, Information Systems"
+    />
+    <meta name="description" content="Wunwan's Professional Website" />
     <title>Wunwan</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./static/script.js" defer></script>
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body onload="addYear()">
     <header>
-        <h1 id="webname">Wunwan Boonsitanara</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="views/cv.html">CV</a>
-            <a href="views/contact.html">Contact Me</a>
-            <a href="views/fun.html">For Fun</a>
-        </nav>
+      <h1 id="webname">Wunwan Boonsitanara</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="views/cv.html">CV</a>
+        <a href="views/contact.html">Contact Me</a>
+        <a href="views/fun.html">For Fun</a>
+      </nav>
     </header>
     <div class="main">
-        <h2 id="greeting">Hi, my name is Wunwan Boonsitanara</h2>
-        <img src="static/profile.jpg" alt="My picture" width="240" height="350">
-        <p id="Intro">I'm a freshman at Carnegie Mellon University majoring in Information Systems!</p>
+      <h2 id="greeting">Hi, my name is Wunwan Boonsitanara</h2>
+      <img src="static/profile.jpg" alt="My picture" width="240" height="350" />
     </div>
-    <footer>© 2025 designed 🎨 and coded 👩🏻‍💻 by Wunwan Boonsitanara</footer>
+    <div class="classA">
+      <span id="shortIntro"
+        >I'm a freshman at Carnegie Mellon University majoring in Information
+        Systems!</span
+      >
+      <span id="readMore">read more...</span>
+      <div class="expand">
+        <span id="longIntro"><br />Nice to meet you! :3</span>
+        <span id="readLess">read less</span>
+      </div>
 
-</body>
+      <!-- <div class="showmore">
+        
+      </div> -->
+    </div>
+    <footer>
+      <p id="copyYear">
+        &copy; designed 🎨 and coded 👩🏻‍💻 by Wunwan Boonsitanara
+      </p>
+    </footer>
+  </body>
 </html>
