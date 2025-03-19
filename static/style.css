@@ -40,9 +40,9 @@ form * {
   cursor: pointer;
 }
 
-#FavList {
+/* #FavList {
   display: none;
-}
+} */
 
 #ValidateMsg {
   text-align: center;
@@ -55,3 +55,42 @@ form * {
 /* .showmore {
   display: none;
 } */
+
+.funIMG {
+  border-radius: 100%;
+  width: 75%;
+}
+
+.mainLayout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#item1,
+#item2,
+#item3,
+#item4 {
+  width: 40vw;
+  margin: auto;
+}
+
+.container {
+  display: inline-block;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgbs(0, 0, 0, 0.1);
+}
+
+.container button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(157, 172, 246);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #cd5c5c;
+}

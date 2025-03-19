@@ -30,18 +30,34 @@
         <a href="fun.html">For Fun</a>
       </nav>
     </header>
-    <div class="main">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Your name(required)</label>
-        <input type="text" id="name" required />
-        <label for="email">Your email (required)</label>
-        <input type="email" id="email" />
-        <label for="comment">Your message (required)</label>
-        <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
-        <input type="submit" value="Send" onclick="validate()" />
-      </form>
-      <p id="ValidateMsg"></p>
+    <div class="mainLayout">
+      <div id="item1">
+        <h2>Find Me</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.1839882196464!2d-79.94545666959928!3d40.44320403684001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1742399331854!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div id="item2">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Your name(required)</label>
+          <input type="text" id="name" required />
+          <label for="email">Your email (required)</label>
+          <input type="email" id="email" />
+          <label for="comment">Your message (required)</label>
+          <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+          <input type="submit" value="Send" onclick="validate()" />
+        </form>
+        <p id="ValidateMsg"></p>
+      </div>
+
       <table>
         <tr>
           <th>Contact Method</th>
